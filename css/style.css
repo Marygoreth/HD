@@ -11,23 +11,28 @@ nav{
     position: -webkit-sticky;
     float: top;
 }
+a.end{
+    color: blue;
+    position: relative;
+    left: 950px;
+    text-align: end;
+}
 .header{
     display: block;
     position: relative;
     color: black;
     background-color: aqua;
-    border: 3px solid rgb(9, 241, 191);
+    grid-row: 1/1;
+    grid-column: 1/4;
+    /* border: 3px solid rgb(9, 241, 191); */
     text-align: center;
+    font-size: 13px;
+    /* block-size: 100px; */
 }
-a.end{
-    color: black;
-    position: relative;
-    left: 950px;
-    text-align: end;
-}
+
 img{
-    width: 100px;
-    margin: 3px; 
+    width: 80px;
+    margin: 1px; 
     position: relative;
     right: 500px;
 }
@@ -36,12 +41,11 @@ img.right{
     position: relative;
     left: 500px;
 }
-article{
-    display: inline;
-}
 .one{
     color: white;
     background-color: black;
+    grid-column:1/1;
+    grid-row: 2/2;
     /* display: block;
     block-size: 100px;
     margin: 20px;
@@ -54,6 +58,8 @@ article{
 .two{
     color: aqua;
     background-color: darkslategray;
+    grid-row: 2/5;
+    grid-column: 2/3;
     /* display: block;
     block-size: 100px;
     margin: 20px;
@@ -67,6 +73,8 @@ article{
 .three{
     color: white;
     background-color:rgb(34, 4, 61);
+    grid-column: 1/1;
+    grid-row: 3/5;
     /* display: inline-block;
     block-size: 200px;
     margin: 20px;
@@ -77,6 +85,8 @@ article{
 .four{
     color: black;
     background-color: grey;
+    grid-column: 3/4;
+    grid-row: 2/2;
     /* display: inline-block;
     block-size: 100px;
     margin: 20px;
@@ -89,6 +99,8 @@ article{
 }
 .five{   color:white;
     background-color: palevioletred;
+    grid-row: 3/3;
+    grid-column: 3/4
     /* display: inline-block;
     block-size: 100px;
     margin: 20px;
@@ -103,6 +115,8 @@ article{
 section{
     color: aliceblue;
     background-color: rgb(211, 81, 81);
+    grid-column: 3/4;
+    grid-row: 4/4;
     /* block-size: 50px;
     padding: 30px;
     margin: 20px;
@@ -112,12 +126,16 @@ section{
 }
 footer{
     background-color: black;
+    grid-column: 1/4;
+    grid-row: 5/-1;
 } 
 .container{
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template:repeat(3,10em)/repeat(3, 1fr);
+    grid-template: 10em 10em 5em 1em 1em/ 1fr 2fr 1fr;
+    /* grid-template-columns: 1fr 2fr 1fr; */
     /* grid-template-columns: 20% 40% 20% 20%; */
-    grid-template-rows: 10em 5em;1em;
+    /* grid-template-rows: 10em 5em;1em; */
     grid-gap:10px;
     
     
