@@ -1,0 +1,124 @@
+nav{
+    /* background-color:white; */
+    font-size: 20px;
+    margin: 5px;
+    border: 2px;
+    border-style: double;
+    padding: 5px;
+    color: white;
+    /* text-align:left; */
+    display: inline-block;
+    position: -webkit-sticky;
+    float: top;
+}
+.header{
+    display: block;
+    position: relative;
+    color: black;
+    background-color: aqua;
+    border: 3px solid rgb(9, 241, 191);
+    text-align: center;
+}
+a.end{
+    color: black;
+    position: relative;
+    left: 950px;
+    text-align: end;
+}
+img{
+    width: 100px;
+    margin: 3px; 
+    position: relative;
+    right: 500px;
+}
+img.right{
+    text-align: right;
+    position: relative;
+    left: 500px;
+}
+article{
+    display: inline;
+}
+.one{
+    color: white;
+    background-color: black;
+    /* display: block;
+    block-size: 100px;
+    margin: 20px;
+    margin-right: 60em;
+    position: relative;
+    right: 10px;
+    text-align: center;
+    padding: 70px; */
+}
+.two{
+    color: aqua;
+    background-color: darkslategray;
+    /* display: block;
+    block-size: 100px;
+    margin: 20px;
+    margin-right: 60rem;
+    margin-left: 50em;
+     padding: 50px;
+    text-align: center;
+    position: relative;
+    right: 10px; */
+}
+.three{
+    color: white;
+    background-color:rgb(34, 4, 61);
+    /* display: inline-block;
+    block-size: 200px;
+    margin: 20px;
+    position: relative;
+    text-align: center;
+    padding: 70px;  */
+}
+.four{
+    color: black;
+    background-color: grey;
+    /* display: inline-block;
+    block-size: 100px;
+    margin: 20px;
+    margin-right: 60rem;
+    margin-left: 50em;
+    padding: 50px;
+    text-align: center;
+    position: relative;
+    left: 10px;  */
+}
+.five{   color:white;
+    background-color: palevioletred;
+    /* display: inline-block;
+    block-size: 100px;
+    margin: 20px;
+    margin-right: 60rem;
+    margin-left: 50em;
+    padding: 50px;
+    text-align: center;
+    position: relative;
+    left: 10px; */
+
+}
+section{
+    color: aliceblue;
+    background-color: rgb(211, 81, 81);
+    /* block-size: 50px;
+    padding: 30px;
+    margin: 20px;
+    position: relative;
+    left: 10px;
+    float: none; */
+}
+footer{
+    background-color: black;
+} 
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    /* grid-template-columns: 20% 40% 20% 20%; */
+    grid-template-rows: 10em 5em;1em;
+    grid-gap:10px;
+    
+    
+}
