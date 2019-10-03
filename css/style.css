@@ -30,7 +30,7 @@ a.end{
     /* block-size: 100px; */
 }
 
-img{
+ img{
     width: 80px;
     margin: 1px; 
     position: relative;
@@ -39,7 +39,7 @@ img{
 img.right{
     text-align: right;
     position: relative;
-    left: 500px;
+    left: 500px; 
 }
 .one{
     color: white;
@@ -137,6 +137,4 @@ footer{
     /* grid-template-columns: 20% 40% 20% 20%; */
     /* grid-template-rows: 10em 5em;1em; */
     grid-gap:10px;
-    
-    
 }
